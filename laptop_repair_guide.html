@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A simple guide to common laptop repairs.">
+  <title>Laptop Repair Guide</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f5f7fa;
+      --surface: #ffffff;
+      --text: #182230;
+      --muted: #667085;
+      --accent: #2563eb;
+      --border: #e3e8ef;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+    }
+
+    header {
+      padding: 3.5rem 1.25rem 2.75rem;
+      background: #172554;
+      color: white;
+    }
+
+    .header-inner, main {
+      width: min(100% - 2rem, 960px);
+      margin: 0 auto;
+    }
+
+    header h1 {
+      margin: 0 0 .65rem;
+      font-size: clamp(2rem, 5vw, 3rem);
+      letter-spacing: -.04em;
+    }
+
+    header p {
+      max-width: 620px;
+      margin: 0;
+      color: #dbeafe;
+      font-size: 1.05rem;
+    }
+
+    main { padding: 2rem 0 3rem; }
+
+    .intro {
+      margin: 0 0 1.5rem;
+      color: var(--muted);
+    }
+
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 270px), 1fr));
+      gap: 1rem;
+    }
+
+    .category {
+      padding: 1.25rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+    }
+
+    .category h2 {
+      margin: 0 0 .9rem;
+      font-size: 1.15rem;
+    }
+
+    .resource-list {
+      display: grid;
+      gap: .55rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .resource-list a {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: .65rem .75rem;
+      color: var(--accent);
+      text-decoration: none;
+      background: #f8faff;
+      border: 1px solid #e8eefc;
+      border-radius: 8px;
+    }
+
+    .resource-list a:hover {
+      background: #eef4ff;
+      border-color: #c8d8ff;
+    }
+
+    .resource-list a:focus-visible {
+      outline: 3px solid #93c5fd;
+      outline-offset: 2px;
+    }
+
+    .placeholder {
+      color: var(--muted);
+      font-size: .78rem;
+      white-space: nowrap;
+    }
+
+    footer {
+      padding: 1.25rem;
+      color: var(--muted);
+      text-align: center;
+      font-size: .9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <h1>Laptop Repair Guide</h1>
+      <p>Welcome! Choose a repair category below, then pick the learning format that works best for you.</p>
+    </div>
+  </header>
+
+  <main>
+    <p class="intro">Each repair has space for a video, schematic, audio guide, and a quiz-based video. The links are placeholders for you to fill in.</p>
+
+    <section class="category-grid" aria-label="Laptop repair categories">
+      <article class="category">
+        <h2>Battery Replacement</h2>
+        <ul class="resource-list">
+          <li><a href="#" aria-label="Battery replacement video">Video <span class="placeholder">Add link</span></a></li>
+          <li><a href="#" aria-label="Battery replacement schematic">Schematic <span class="placeholder">Add link</span></a></li>
+          <li><a href="#" aria-label="Battery replacement audio guide">Audio guide <span class="placeholder">Add link</span></a></li>
+          <li><a href="#" aria-label="Battery replacement quizzed video">Quizzed video <span class="placeholder">Add link</span></a></li>
+        </ul>
+      </article>
+
+      <article class="category">
+        <h2>Screen Replacement</h2>
+        <ul class="resource-list">
+          <li><a href="#" aria-label="Screen replacement video">Video <span class="placeholder">Add link</span></a></li>
+          <li><a href="#" aria-label="Screen replacement schematic">Schematic <span class="placeholder">Add link</span></a></li>
+          <li><a href="#" aria-label="Screen replacement audio guide">Audio guide <span class="placeholder">Add link</span></a></li>
+          <li><a href="#" aria-label="Screen replacement quizzed video">Quizzed video <span class="placeholder">Add link</span></a></li>
+        </ul>
+      </article>
+
+      <article class="category">
+        <h2>Keyboard Replacement</h2>
+        <ul class="resource-list">
+          <li><a href="#" aria-label="Keyboard replacement video">Video <span class="placeholder">Add link</span></a></li>
+          <li><a href="#" aria-label="Keyboard replacement schematic">Schematic <span class="placeholder">Add link</span></a></li>
+          <li><a href="#" aria-label="Keyboard replacement audio guide">Audio guide <span class="placeholder">Add link</span></a></li>
+          <li><a href="#" aria-label="Keyboard replacement quizzed video">Quizzed video <span class="placeholder">Add link</span></a></li>
+        </ul>
+      </article>
+
+      <article class="category">
+        <h2>Storage (SSD / HDD)</h2>
+        <ul class="resource-list">
+          <li><a href="#" aria-label="Storage replacement video">Video <span class="placeholder">Add link</span></a></li>
+          <li><a href="#" aria-label="Storage replacement schematic">Schematic <span class="placeholder">Add link</span></a></li>
+          <li><a href="#" aria-label="Storage replacement audio guide">Audio guide <span class="placeholder">Add link</span></a></li>
+          <li><a href="#" aria-label="Storage replacement quizzed video">Quizzed video <span class="placeholder">Add link</span></a></li>
+        </ul>
+      </article>
+
+      <article class="category">
+        <h2>RAM Upgrade</h2>
+        <ul class="resource-list">
+          <li><a href="#" aria-label="RAM upgrade video">Video <span class="placeholder">Add link</span></a></li>
+          <li><a href="#" aria-label="RAM upgrade schematic">Schematic <span class="placeholder">Add link</span></a></li>
+          <li><a href="#" aria-label="RAM upgrade audio guide">Audio guide <span class="placeholder">Add link</span></a></li>
+          <li><a href="#" aria-label="RAM upgrade quizzed video">Quizzed video <span class="placeholder">Add link</span></a></li>
+        </ul>
+      </article>
+
+      <article class="category">
+        <h2>Charging Port</h2>
+        <ul class="resource-list">
+          <li><a href="#" aria-label="Charging port repair video">Video <span class="placeholder">Add link</span></a></li>
+          <li><a href="#" aria-label="Charging port repair schematic">Schematic <span class="placeholder">Add link</span></a></li>
+          <li><a href="#" aria-label="Charging port repair audio guide">Audio guide <span class="placeholder">Add link</span></a></li>
+          <li><a href="#" aria-label="Charging port repair quizzed video">Quizzed video <span class="placeholder">Add link</span></a></li>
+        </ul>
+      </article>
+
+      <article class="category">
+        <h2>Fan &amp; Cooling</h2>
+        <ul class="resource-list">
+          <li><a href="#" aria-label="Fan and cooling repair video">Video <span class="placeholder">Add link</span></a></li>
+          <li><a href="#" aria-label="Fan and cooling schematic">Schematic <span class="placeholder">Add link</span></a></li>
+          <li><a href="#" aria-label="Fan and cooling audio guide">Audio guide <span class="placeholder">Add link</span></a></li>
+          <li><a href="#" aria-label="Fan and cooling quizzed video">Quizzed video <span class="placeholder">Add link</span></a></li>
+        </ul>
+      </article>
+
+      <article class="category">
+        <h2>Trackpad Replacement</h2>
+        <ul class="resource-list">
+          <li><a href="#" aria-label="Trackpad replacement video">Video <span class="placeholder">Add link</span></a></li>
+          <li><a href="#" aria-label="Trackpad replacement schematic">Schematic <span class="placeholder">Add link</span></a></li>
+          <li><a href="#" aria-label="Trackpad replacement audio guide">Audio guide <span class="placeholder">Add link</span></a></li>
+          <li><a href="#" aria-label="Trackpad replacement quizzed video">Quizzed video <span class="placeholder">Add link</span></a></li>
+        </ul>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    Laptop Repair Guide
+  </footer>
+</body>
+</html>
